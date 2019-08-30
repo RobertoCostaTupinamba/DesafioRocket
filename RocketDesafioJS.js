@@ -5,6 +5,3 @@ var endereco = {
  cidade: "São Paulo",
  uf: "SP"
 };
-
-// Testando git
-//teste
