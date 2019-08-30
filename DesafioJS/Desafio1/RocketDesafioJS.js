@@ -30,13 +30,20 @@ var endereco = {
        console.log(vetorPar);
    }
    pares(32, 321);
+   
 //    3º exercício
 // Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
 // e retorna um booleano true/false caso exista ou não.
 
 function temHabilidade(skills) {
-    // skills.forEach(element => {
-    //     console.log(element)
-    // });
-var skills = ["Javascript", "ReactJS", "React Native"];
-temHabilidade(skills); // true ou false
+    var achou = false
+    skills.forEach(element => {
+        if(element === "Javascript"){
+            achou = true;
+        }
+    });
+    return achou
+}
+   var skills = ["Javascript", "ReactJS", "React Native"];
+   console.log(temHabilidade(skills)); // true ou false
+   
